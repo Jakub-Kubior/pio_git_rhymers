@@ -1,0 +1,21 @@
+### IntelliJ IDEA ###
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+gen/
+
+### Logi i pliki tymczasowe ###
+*.log
+*.tmp
+*.swp
+
+### Systemowe ###
+.DS_Store
+Thumbs.db
+
+### Build Tools ###
+target/
+build/
+.gradle/
