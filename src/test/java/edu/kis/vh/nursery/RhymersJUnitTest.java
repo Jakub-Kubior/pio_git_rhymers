@@ -3,6 +3,7 @@ package edu.kis.vh.nursery;
 import org.junit.Assert;
 import org.junit.Test;
 
+//Project Status on commit 14. 10.04.2026: Everything works correctly
 public class RhymersJUnitTest {
 
     public static final int IN = 888;
@@ -76,5 +77,30 @@ public class RhymersJUnitTest {
         result = rhymer.countOut();
         Assert.assertEquals(EMPTY_STACK_VALUE, result);
     }
+
+    @Test
+    public void testFIFOCountOut() {
+        FIFORhymer rhymer = new FIFORhymer();
+        final int EMPTY_STACK_VALUE = -1;
+
+        int result = rhymer.countOut();
+        Assert.assertEquals(EMPTY_STACK_VALUE, result);
+
+        int testValue1 = 4;
+        int testValue2 = 5;
+        rhymer.countIn(testValue1);
+        rhymer.countIn(testValue2);
+
+        result = rhymer.countOut();
+        Assert.assertEquals(testValue1, result);
+
+        result = rhymer.countOut();
+        Assert.assertEquals(testValue2, result);
+
+        result = rhymer.countOut();
+        Assert.assertEquals(EMPTY_STACK_VALUE, result);
+    }
+
+    // TODO: add unit tests for other classes
 
 }
