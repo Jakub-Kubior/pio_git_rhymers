@@ -7,6 +7,7 @@ package edu.kis.vh.nursery;
 public class DefaultCountingOutRhymer {
 
     private static final int ERROR = -1;
+    // TODO: Assign STACK_EMPTY to ERROR value
     private static final int STACK_EMPTY = -1;
     private static final int MAX_SIZE = 12;
 
