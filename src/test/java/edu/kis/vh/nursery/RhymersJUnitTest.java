@@ -3,6 +3,7 @@ package edu.kis.vh.nursery;
 import org.junit.Assert;
 import org.junit.Test;
 
+//Project Status on commit 14. 10.04.2026: Everything works correctly
 public class RhymersJUnitTest {
 
     public static final int IN = 888;
